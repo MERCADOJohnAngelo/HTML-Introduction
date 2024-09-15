@@ -1,58 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <style>
-        body {
-            background-image: url('background1.jpeg');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="welcome-section">
+            <h1>Welcome Back</h1>
+            <p>We're thrilled to see you again and hope you're ready for a productive and enjoyable session with us.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><img src="facebook.png" width="150"></a>
+                <a href="https://www.instagram.com/"><img src="Instagram_icon.png" width="130"></a>
+                <a href="https://x.com/"><img src="pngimg.com - twitter_PNG3.png" width="140"></a>
+            </div>
+        </div>
+        
+        <div class="signup-section">
+            <h2>Sign Up</h2>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
 
-    <title>Home Page</title>
-<h1>INTRODUCTION</h1>
-<img src="angelo.jpg"width='25%'>
-<h2>MERCADO, JOHN ANGELO</h2>
-<h3>BSCS 2B STUDENT. SAAN? EDI SA KLL PARANG DI KA NAG GRADE 2 DYAN!</h3>
-<hr>
-<h3>About Me</h3>
-<p>I'M 22 YEARS OLD STUDYING AT KOLEHIYO NG LUNGSOD NG LIPA CURRETLY LIVING IN TRANSVILLE HOMES BANAY BANAY LIPA CITY</p>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
 
-<ol>
-<li> <a href="Hobbies.html">Hobbies</a></li>
-<li> <a href="Skills.html">Skills</a></li>
-<li> <a href="Tools And Technology Stacks.html">Tools and Technology Stacks</a></li>
-</ol>
-<hr>
-<p>Name</p>
-<input type="text" id="name" placeholder="User Name">
- <p>Email</p>
-<input type="text" id="name" placeholder="Enter your email">
-    <p>Your message</p>
-    <textarea></textarea>
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-<br>
-<label>Country</label>
-<select>
-    <option>Philippines</option>
-    <option>Poland</option>
-    <option>Antartica</option>
-</select>
-<br>
-
-<h4>Job Type</h4>
-<form>
-<label>
-<input type="radio" name="Choice" value="Option1"> Full Time
-</label><br>
-<label>
-<input type="radio" name="Choice" value="Option2"> Part Time
-</label><br>
-
-<button>Submit mo na!</button>
-
+                <div class="buttons">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
